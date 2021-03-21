@@ -1,0 +1,13 @@
+# rpipoweroff - Service for rpi-poweroff
+
+[Unit]
+Description=rpipoweroff (Implementation of power off button on Raspberry Pi)
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/opt/rpipoweroff/rpipoweroff.py
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

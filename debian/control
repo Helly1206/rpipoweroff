@@ -1,0 +1,14 @@
+Source: rpipoweroff
+Section: net
+Priority: optional
+Maintainer: Helly1206
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+XB-Plugin-Section: sharing
+
+Package: rpipoweroff
+Architecture: all
+Depends: python3,
+         ${misc:Depends}
+Recommends: pigpio (>= 1.71-0~rpt1)
+Description: rpipoweroff - Service to reboot or poweroff the raspberry pi
